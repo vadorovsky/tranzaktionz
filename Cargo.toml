@@ -1,0 +1,16 @@
+[package]
+name = "tranzaktionz"
+version = "0.1.0"
+authors = ["Michal Rostecki <mrostecki@opensuse.org>"]
+edition = "2021"
+
+description = "Simple off-chain transaction analyzer"
+license = "Apache-2.0"
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "3.0.13", features = ["derive"] }
+csv = "1.1"
+rust_decimal = { version = "1.21", features = ["serde-with-str"] }
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "1.0"
